@@ -3335,6 +3335,10 @@ table.alt tbody tr td {
 	position: relative;
 	z-index: 2;
 }
+.wrapper.style3 img{
+	height: 280px;
+	text-align: left;
+}
 
 .wrapper.style3 .para p{
 	text-transform: none;
@@ -3342,9 +3346,20 @@ table.alt tbody tr td {
 	font-size: 1rem;
 	font-weight: 300;
 	margin: 0 0 .5rem 0;
-	padding: 0 75px 1rem 75px;
+	padding: 0 5rem 1rem 5rem;
 	letter-spacing: 0rem;
 }
+@media screen and (max-width: 980px) {
+		.wrapper.style3 .para p{
+			text-transform: none;
+			color: white;
+			font-size: 1rem;
+			font-weight: 300;
+			margin: 0 0 .5rem 0;
+			padding: 0 0rem 1rem 0rem;
+			letter-spacing: 0rem;
+		}
+	}
 
 .wrapper.style3 p {
 	text-transform: uppercase;
