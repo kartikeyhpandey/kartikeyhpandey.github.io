@@ -2,16 +2,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 
-#about{
-	padding-left: 10rem;
-	padding-right: 10rem;
-	display: flex;
-}
 
-#about p{
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-}
 
 #container {
 	padding-top: 1rem;
@@ -3427,10 +3418,9 @@ table.alt tbody tr td {
 }
 
 .wrapper.style3 .para p{
-	float: right;
 	text-transform: none;
 	color: white;
-	font-size: 1rem;
+	font-size: 1.19rem;
 	font-weight: 300;
 	margin: 0 0 .5rem 0;
 	padding: 0 5rem 1rem 5rem;
