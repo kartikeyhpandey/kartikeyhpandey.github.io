@@ -42,8 +42,10 @@
 			<img src="images/slide01.jpg" alt="" />
 			<div class="inner">
 				<header>
-					<p>Welcome to my website</p>
-					<h2>Kartikey Pandey</h2>
+					<p>Welcome to my online portfolio</p>
+					<div id="container">
+						<div id="head_text">I Am&nbsp;</div></h2><div id="text"></div><div id="cursor"></div>
+					</div>
 				</header>
 			</div>
 		</article>
@@ -53,14 +55,19 @@
 		<div class="inner">
 
 			<header class="align-center">
-				<p>Want to learn more about me?</p>
-				<h2>Here you go!</h2>
-				<img src="images/MyImg.png">
-				<div class="para">
-					<p>My name is Kartikey, and  I am a second-year computer engineering major at the University of Cincinnati. Upon completion of my degree, I plan to go to a business school and earn an MBA. I hope to work in the tech industry in the future.
-					I am really fond of solving problems, that's how I developed an affinity for computer science and mathematics. However, my passion for solving problems goes beyond topics in school, I aim to contribute to my community by acknowledging the problems it faces and finding solutions. To talk about my college experience, I really enjoyed my first semester at UC. ​In the very first week of the fall semester, I started working in the Department of Chemical and Environmental Engineering as a web-developer; there I meet a lot of professors every day. Almost every day, I learn something new through so many interesting conversations with them about environmental problems plaguing our planet right now and their possible solutions. I love talking to people about their views on various topics; conversations like these help me to develop better thinking and see the world with a broader perspective. Presently, I have two leadership positions in a student organization called UC CubeCats. CubeCats aims to be the center of research and development in the space industry for university students. I am the secretary of the club and the Software & Payload Team Lead of Project Sphynx.  Project Sphynx’s main objective is to build a high altitude balloon to measure the number of muon events per second at an altitude of about 95,000 feet. I got involved in UC CubeCats because they work towards solving prevalent problems in the Ohio area with the help of cube satellites.</p>
-				</div>
+				<p>Learn more about me!</p>
 			</header>
+				<div id="about">
+					<img src="images/MyImg.png">
+
+					<div class="para">
+						<p>I am a second-year student at the University of Cincinnati majoring in Computer Engineering and minoring in Math & Physics. 
+						I am really fond of solving problems, that's how I developed an affinity for computer science and mathematics. However, my passion for solving problems goes beyond topics in school, I aim to contribute to my community by acknowledging the problems it faces and finding solutions. </p>
+					</div>
+				</div>
+			
+			
+			
 		</div>
 		
 	</section>
@@ -197,6 +204,82 @@
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script type="text/javascript">
+
+var _CONTENT = [ 
+	"Kartikey Pandey",
+	"A Software Developer", 
+	"A Web Developer", 
+	"A Full-stack Developer", 
+	
+];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Cursor element 
+var _CURSOR = document.querySelector("#cursor");
+
+// Implements typing effect
+function Type() { 
+	// Get substring with 1 characater added
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		// Hide the cursor
+		_CURSOR.style.display = 'none';
+
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	// Get substring with 1 characater deleted
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If current sentence was last then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_CURSOR.style.display = 'inline-block';
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+
+</script>
+
 
 </body>
 </html>
