@@ -2961,8 +2961,8 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 {
-	background-color: rgb(235, 235, 235);;
-	color: #a6a6a6;
+	background-color: black;;
+	color: white;
 }
 
 .wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3006,7 +3006,9 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 .box {
-	border-color: rgba(0, 0, 0, 0.15);
+    background-color: black;
+    color: white;
+	border-color: black;
 }
 
 .wrapper.style2 input[type="submit"],
