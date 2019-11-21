@@ -2138,6 +2138,8 @@ hr {
 .box {
 	margin-bottom: 2rem;
 	background: #FFF;
+    border-width: thick;
+    border-color: aliceblue;
 }
 
 .box .image.fit {
@@ -2176,6 +2178,30 @@ hr {
 
 .box .content {
 	padding: 3rem;
+}
+.box .content1 {
+    height: 229px;
+    max-width: 557px;
+	padding: 3rem;
+    background-image: url(/images/work.png);
+}
+.box .content2 {
+    height: 229px;
+    max-width: 557px;
+	padding: 3rem;
+    background-image: url(/images/leadeship.png);
+}
+.box .content3 {
+    height: 229px;
+    max-width: 557px;
+	padding: 3rem;
+    background-image: url(/images/honors.png);
+}
+.box .content4 {
+    height: 229px;
+    max-width: 557px;
+	padding: 3rem;
+    background-image: url(/images/awards.png);
 }
 
 .box > :last-child,
@@ -3217,7 +3243,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 {
-	background-color: black;;
+	background-color: #080808;;
 	color: white;
 }
 
@@ -3234,7 +3260,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
-	color: #000;
+	color: #fff;
 
 }
 .wrapper.style2 h1{
@@ -3272,7 +3298,7 @@ table.alt tbody tr td {
 .wrapper.style2 input[type="button"],
 .wrapper.style2 button,
 .wrapper.style2 .button {
-	background-color: #000;
+	background-color: #fff;
 	color: #f2f2f2 !important;
 }
 
@@ -3282,8 +3308,8 @@ table.alt tbody tr td {
 .wrapper.style2 button.alt,
 .wrapper.style2 .button.alt {
 	background-color: transparent;
-	box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15);
-	color: #000 !important;
+	box-shadow: inset 0 0 0 2px #f5f5f5;
+	color: #fff !important;
 }
 
 .wrapper.style2 input[type="submit"].alt:hover,
@@ -3299,7 +3325,7 @@ table.alt tbody tr td {
 .wrapper.style2 input[type="button"].alt:active,
 .wrapper.style2 button.alt:active,
 .wrapper.style2 .button.alt:active {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: #fff;
 }
 
 .wrapper.style2 input[type="submit"].alt.icon:before,
@@ -3477,7 +3503,8 @@ table.alt tbody tr td {
 }
 
 .wrapper.style3 .box {
-	border-color: rgba(255, 255, 255, 0.25);
+	border-color: rgba(255, 255, 255, 0.5);
+    background-image: url(../../images/bg.jpg);
 }
 
 .wrapper.style3 input[type="submit"],
