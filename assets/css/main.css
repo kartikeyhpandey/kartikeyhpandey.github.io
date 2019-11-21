@@ -3245,6 +3245,8 @@ table.alt tbody tr td {
 .wrapper.style2 {
 	background-color: #080808;;
 	color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
