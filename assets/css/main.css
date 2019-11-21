@@ -3241,6 +3241,13 @@ table.alt tbody tr td {
 	border-color: rgba(255, 255, 255, 0.25);
 }
 
+#two{
+    background-image: url(/images/matrix-3415878_1280.jpg);
+}
+#bg{
+    background-image: url(/images/slide03.jpg);
+}
+
 .wrapper.style2 {
 	background-color: #080808;;
 	color: white;
