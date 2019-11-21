@@ -2180,26 +2180,25 @@ hr {
 	padding: 3rem;
 }
 .box .content1 {
-    height: 229px;
-    max-width: 557px;
+    height: 257px;
+
 	padding: 3rem;
     background-image: url(/images/work.png);
 }
 .box .content2 {
-    height: 229px;
-    max-width: 557px;
+    height: 257px;
 	padding: 3rem;
-    background-image: url(/images/leadeship.png);
+    background-image: url(/images/leadership.png);
 }
 .box .content3 {
-    height: 229px;
-    max-width: 557px;
+    height: 257px;
+
 	padding: 3rem;
     background-image: url(/images/honors.png);
 }
 .box .content4 {
-    height: 229px;
-    max-width: 557px;
+    height: 257px;
+
 	padding: 3rem;
     background-image: url(/images/awards.png);
 }
