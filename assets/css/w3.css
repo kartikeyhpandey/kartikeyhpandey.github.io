@@ -423,9 +423,24 @@ a {
 
 .w3-tooltip,
 .w3-display-container {
-    position: relative
+    position: relative;
+        display:block;
 }
+ .mySlides {
+            display: none
+        }
 
+        .w3-left,
+        .w3-right,
+        .w3-badge {
+            cursor: pointer
+        }
+
+        .w3-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0
+        }
 .w3-tooltip .w3-text {
     display: none
 }
@@ -1432,6 +1447,7 @@ a {
 .w3-padding-large {
     padding: 12px 24px !important
 }
+
 
 .w3-padding-12 {
     padding-top: 18.5px !important;

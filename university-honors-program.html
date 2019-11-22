@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 
 <html>
+
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>University Honors Program</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/w3.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
@@ -15,7 +17,7 @@
 <body>
 
     <!-- Header -->
-    <header id="header" class="alt2">
+    <header id="header" class="alt">
         <div class="logo"><a href="index.html"><img style="max-height:40px; vertical-align:middle" src="images/logo.png">Kartikey Pandey</a></div>
         <a href="#menu">Menu</a>
     </header>
@@ -27,7 +29,7 @@
             <li><a href='index.html'>Home</a></li>
             <li><a href='work-experience.html'>Work Experience</a></li>
             <li><a href='leadership.html'>Leadership</a></li>
-            <li><a href='university-honors-program.html'>University Honors Program</a>
+            <li><a href='university-honors-program.html'>Honors Program</a>
                 <ul>
                     <li><a href='problem-pitch.html'>Problem Pitch Project</a></li>
                     <li><a href='global-scholar.html'>Global Scholar Mission</a></li>
@@ -43,27 +45,75 @@
     </nav>
 
     <!-- One -->
-    <section class="banner full">
-        <article>
-            <img src="images/slide01.jpg" alt="" />
-            <div class="inner">
-                <header>
-                    <p></p>
-                    <h2>Problem Pitch Project</h2>
-                </header>
-            </div>
-        </article>
 
-        <article>
-            <img src="images/slide05.jpg" alt="" />
+
             <div class="inner">
-                <header>
-                    <p></p>
-                    <h2>Global Citizen Scholar Plan</h2>
-                </header>
+            <main class="main-content">
+                <section class="slideshow">
+                    <div class="slideshow-inner">
+                        <div class="slides">
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <div class="caption">
+                                        <div class="title">Problem Pitch Project</div>
+                                        <div class="text">
+                                            <p>2018 - 2019</p>
+                                        </div>
+                                        <a href="2018 - 19.html" class="btn">
+                                            <span class="btn-inner">Learn More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <img style="width: 100%" src="images/bg.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <div class="caption">
+                                        <div class="title">Global Scholar Plan</div>
+                                        <div class="text">
+                                            <p>2019 - 2020</p>
+                                        </div>
+                                        <a href="2018 - 19.html" class="btn">
+                                            <span class="btn-inner">Learn More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <img style="width: 100%" src="images/matrix-3415878_1280.jpg" alt="" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pagination">
+                            <div class="item" onclick="currentDiv(1)">
+                                <div class="icon" onclick="currentDiv(1)">1</div>
+                            </div>
+                            <div class="item" onclick="currentDiv(2)">
+                                <div class="icon" onclick="currentDiv(2)">2</div>
+                            </div>
+                        </div>
+                        <div class="arrows">
+                            <div class="arrow prev" onclick="plusDivs(-1)">
+                                <span class="svg svg-arrow-left">
+                                    <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                                        <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z" /> </svg>
+                                    <span class="alt sr-only"></span>
+                                </span>
+                            </div>
+                            <div class="arrow next" onclick="plusDivs(1)">
+                                <span class="svg svg-arrow-right">
+                                    <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                                        <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z" /> </svg>
+                                    <span class="alt sr-only"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
             </div>
-        </article>
-    </section>
 
     <!-- Footer -->
     <footer id="footer">
@@ -108,6 +158,102 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function slideshowNext(slideshow, previous, auto) {
+            var slides = slideshow.find('.slide');
+            var activeSlide = slides.filter('.is-active');
+            var newSlide = null;
+            if (previous) {
+                newSlide = activeSlide.prev('.slide');
+                if (newSlide.length === 0) {
+                    newSlide = slides.last();
+                }
+            } else {
+                newSlide = activeSlide.next('.slide');
+                if (newSlide.length == 0)
+                    newSlide = slides.filter('.slide').first();
+            }
+
+            slideshowSwitch(slideshow, newSlide.index(), auto);
+        }
+
+        function homeSlideshowParallax() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > windowHeight) return;
+            var inner = slideshow.find('.slideshow-inner');
+            var newHeight = windowHeight - (scrollTop / 2);
+            var newTop = scrollTop * 0.8;
+
+            inner.css({
+                transform: 'translateY(' + newTop + 'px)',
+                height: newHeight
+            });
+        }
+
+        $(document).ready(function() {
+            $('.slide').addClass('is-loaded');
+
+            $('.slideshow .arrows .arrow').on('click', function() {
+                slideshowNext($(this).closest('.slideshow'), $(this).hasClass('prev'));
+            });
+
+            $('.slideshow .pagination .item').on('click', function() {
+                slideshowSwitch($(this).closest('.slideshow'), $(this).index());
+            });
+
+
+            /* Lazyloading
+            $('.slideshow').each(function(){
+              var slideshow=$(this);
+              var images=slideshow.find('.image').not('.is-loaded');
+              images.on('loaded',function(){
+                var image=$(this);
+                var slide=image.closest('.slide');
+                slide.addClass('is-loaded');
+              });
+            */
+
+            var timeout = setTimeout(function() {
+                slideshowNext(slideshow, false, true);
+            }, slideshowDuration);
+
+            slideshow.data('timeout', timeout);
+        });
+
+        if ($('.main-content .slideshow').length > 1) {
+            $(window).on('scroll', homeSlideshowParallax);
+        }
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            var dots = document.getElementsByClassName("item");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" is-active", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " is-active";
+        }
     </script>
 
 </body></html>

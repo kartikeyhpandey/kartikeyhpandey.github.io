@@ -4436,7 +4436,7 @@ body.subpage {
 /* Banner */
 
 .banner {
-	background-color: #8a4680;
+	background-color: black;
 	color: #e2d1df;
 	padding: 8em 0;
 	position: relative;
@@ -4475,6 +4475,7 @@ body.subpage {
 	padding: 0;
 	min-height: 100vh;
 	height: 100vh !important;
+    background-color: black;
 }
 
 .banner.half {
