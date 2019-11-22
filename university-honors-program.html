@@ -65,7 +65,7 @@
                                     </div>
                                 </div>
                                 <div class="image-container">
-                                    <img style="width: 100%" src="images/bg.jpg" alt="" />
+                                    <img style="height: 100%" src="images/bg.jpg" alt="" />
                                 </div>
                             </div>
                             <div class="slide">
@@ -81,7 +81,7 @@
                                     </div>
                                 </div>
                                 <div class="image-container">
-                                    <img style="width: 100%" src="images/matrix-3415878_1280.jpg" alt="" />
+                                    <img style="height: 100%; width:  100%" src="images/matrix-3415878_1280.jpg" alt="" />
                                 </div>
                             </div>
 
@@ -160,37 +160,6 @@
         AOS.init();
     </script>
     <script>
-        function slideshowNext(slideshow, previous, auto) {
-            var slides = slideshow.find('.slide');
-            var activeSlide = slides.filter('.is-active');
-            var newSlide = null;
-            if (previous) {
-                newSlide = activeSlide.prev('.slide');
-                if (newSlide.length === 0) {
-                    newSlide = slides.last();
-                }
-            } else {
-                newSlide = activeSlide.next('.slide');
-                if (newSlide.length == 0)
-                    newSlide = slides.filter('.slide').first();
-            }
-
-            slideshowSwitch(slideshow, newSlide.index(), auto);
-        }
-
-        function homeSlideshowParallax() {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop > windowHeight) return;
-            var inner = slideshow.find('.slideshow-inner');
-            var newHeight = windowHeight - (scrollTop / 2);
-            var newTop = scrollTop * 0.8;
-
-            inner.css({
-                transform: 'translateY(' + newTop + 'px)',
-                height: newHeight
-            });
-        }
-
         $(document).ready(function() {
             $('.slide').addClass('is-loaded');
 
@@ -203,16 +172,7 @@
             });
 
 
-            /* Lazyloading
-            $('.slideshow').each(function(){
-              var slideshow=$(this);
-              var images=slideshow.find('.image').not('.is-loaded');
-              images.on('loaded',function(){
-                var image=$(this);
-                var slide=image.closest('.slide');
-                slide.addClass('is-loaded');
-              });
-            */
+          
 
             var timeout = setTimeout(function() {
                 slideshowNext(slideshow, false, true);
@@ -221,9 +181,6 @@
             slideshow.data('timeout', timeout);
         });
 
-        if ($('.main-content .slideshow').length > 1) {
-            $(window).on('scroll', homeSlideshowParallax);
-        }
         var slideIndex = 1;
         showDivs(slideIndex);
 
