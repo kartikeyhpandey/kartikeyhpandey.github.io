@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/w3.css" />
 
 
 </head>
@@ -90,6 +91,33 @@
                         <p>
                             I have had many opportunities where I attempted to solve some of the issues faced by the people around me, and these are some of my most cherished experiences of this academic year. I came to UC with the goal to develop myself as a global citizen and to use the education that I receive here to fulfill my goal of becoming a social entrepreneur, and better the world around me. I believe this year was the first step to achieving that goal. I am excited about what the future holds for me here at UC!
                         </p>
+                        <div class="w3-row-padding">
+                            <div class="w3-container w3-half">
+                                <img src="images/year-in-review/2ac013_7cf68d5deb924dbc99471f2730670f8b_mv2.webp" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                            </div>
+                            <div class="w3-container w3-half">
+                                <img src="images/year-in-review/2ac013_9d8e178a14b24b79b3fff203be7a955b_mv2.webp" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="w3-row-padding">
+                            <div class="w3-container w3-third">
+                                <img src="images/year-in-review/2ac013_ad481a1786d34294bfe030c54ed5fefb_mv2.webp" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                            </div>
+                            <div class="w3-container w3-third">
+                                <img src="images/year-in-review/2ac013_eab29b563d6a40d6820eed2dfa4b36c3_mv2_d_2904_3872_s_4_2.webp" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                            </div>
+                            <div class="w3-container w3-third">
+                                <img src="images/year-in-review/2ac013_fb51c72fe7fa4e47a5af00aac8850e6a_mv2.webp" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                            </div>
+                        </div>
+                        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-hover-red w3-xlarge w3-display-middleright">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                                <img id="img01" style="width:100%">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,6 +167,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
     </script>
 
 </body></html>
