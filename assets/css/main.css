@@ -3245,7 +3245,11 @@ table.alt tbody tr td {
     background-image: url(/images/matrix-3415878_1280.jpg);
 }
 #bg{
-    background-image: url(/images/slide03.jpg);
+    background-image: url(/images/campus-sunset.jpg);
+}
+#bg2{
+    background-image: url(/images/skyline.jpg);
+    background-size: cover;
 }
 
 .wrapper.style2 {
@@ -3474,10 +3478,10 @@ table.alt tbody tr td {
 .wrapper.style3 {
 	background-color: #000;
 	color: #bfbfbf;
-	background-image: url(../../images/bg.jpg);
+	background-image: url(../../images/riverfront-sunset-crop.jpg);
 	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
+
+
 	position: relative;
 }
 
@@ -4480,9 +4484,10 @@ body.subpage {
 
 .banner.half {
 	padding: 0;
-	min-height: 33vh;
-	height: 33vh !important;
-    background-color: black;
+	min-height: 40vh;
+	height: 40vh !important;
+    background-image: url(/images/riverfront-sunset-crop.jpg);
+    background-size: cover;
 }
 .banner.half > article h2{
     font-size: 3rem;
@@ -4627,7 +4632,7 @@ body.subpage {
 	top: 0;
 	left: 0;
 	background: #000;
-	opacity: 0.75;
+	opacity: 0.25;
 }
 
 .banner > article .inner {
