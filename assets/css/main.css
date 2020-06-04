@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 
 .btn {
   display: inline-block;
@@ -2200,7 +2200,7 @@ hr {
     height: 257px;
 
 	padding: 3rem;
-    background-image: url(/images/awards.png);
+    background-image: url(/images/projects.png);
 }
 
 .box > :last-child,
@@ -3271,8 +3271,8 @@ table.alt tbody tr td {
 	color: #000;
 }
 
-.wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
-	color: #fff;
+.wrapper.style2 .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
+	color: #000;
 
 }
 .wrapper.style2 h1{
@@ -3280,6 +3280,7 @@ table.alt tbody tr td {
 	margin: 0;
 	padding: 0 0 5rem 0;
 	border: 0;
+    color: #fff;
 	text-transform: uppercase;
 	font-size: 2rem;
 	text-align: center;
@@ -3476,7 +3477,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style3 {
-	background-color: #000;
+	background-color: #fff;
 	color: #bfbfbf;
 	background-image: url(../../images/riverfront-sunset-crop.jpg);
 	background-size: cover;
