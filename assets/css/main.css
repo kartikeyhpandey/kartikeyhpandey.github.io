@@ -2183,24 +2183,24 @@ hr {
     height: 257px;
 
 	padding: 3rem;
-    background-image: url(/images/work.png);
+    background-image: url(/images/work.jpg);
 }
 .box .content2 {
     height: 257px;
 	padding: 3rem;
-    background-image: url(/images/leadership.png);
+    background-image: url(/images/leadership.jpg);
 }
 .box .content3 {
     height: 257px;
 
 	padding: 3rem;
-    background-image: url(/images/honors.png);
+    background-image: url(/images/honors.jpg);
 }
 .box .content4 {
     height: 257px;
 
 	padding: 3rem;
-    background-image: url(/images/projects.png);
+    background-image: url(/images/projects.jpg);
 }
 
 .box > :last-child,
