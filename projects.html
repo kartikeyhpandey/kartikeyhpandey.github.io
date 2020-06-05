@@ -34,7 +34,7 @@
 
 
     <!-- Nav -->
-    <nav id="menu">
+      <nav id="menu">
         <ul class="links">
             <li><a href='index.html'>Home</a></li>
             <li><a href='work-experience.html'>Work Experience</a></li>
@@ -49,11 +49,11 @@
             <li><a href='year-in-review.html'>Year In Review</a>
                 <ul>
                     <li><a href='2018-19.html'>2018-19</a></li>
+                    <li><a href='2019-20.html'>2019-20</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
-
 
     <section class="banner half">
         <article>
@@ -143,11 +143,8 @@
                                 <div class="w3-col s6 w3-center">
                                     <img src="images/org_struct.png" width="90%">
                                 </div>
-
-
                             </div>
                             <br>
-
                             <div class="w3-row w3-center">
                                 <div class="w3-col s6 w3-center">
                                     <img src="images/proj_highlights.png" width="90%">
@@ -238,7 +235,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
     </script>
 
 
