@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/w3.css" />
-    
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149404751-1"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149404751-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -30,7 +30,27 @@
     <!-- Header -->
     <header id="header" class="alt">
         <div class="logo"><a href="index.html"><img style="max-height:40px; vertical-align:middle" src="images/logo.png"> Kartikey Pandey</a></div>
-        <a href="#menu">Menu</a>
+        <div class="nav">
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='work-experience.html'>Work Experience</a></li>
+                <li><a href='leadership.html'>Leadership</a></li>
+                <li><a href='projects.html'>Projects</a></li>
+                <li class="w3-center"><a href='university-honors-program.html'>Honors Program <i class="fa fa-caret-down"></i></a>
+                    <ul class="w3-center">
+                        <li><a href='problem-pitch.html'>Problem Pitch</a></li>
+                        <li><a href='global-scholar.html'>Global Scholar</a></li>
+                    </ul>
+                </li>
+                <li><a href='year-in-review.html'>Year In Review <i class="fa fa-caret-down"></i></a>
+                    <ul class="w3-center">
+                        <li><a href='2018-19.html'>Freshmen Year</a></li>
+                        <li><a href='2019-20.html'>Sophomore Year</a></li>
+                    </ul>
+                </li>
+                <li><a href="#menu" class="icon"><i class="fa fa-bars"></i></a></li>
+            </ul>
+        </div>
     </header>
 
 
@@ -185,6 +205,9 @@
             document.getElementById("img01").src = element.src;
             document.getElementById("modal01").style.display = "block";
         }
+
     </script>
 
-</body></html>
+</body>
+
+</html>

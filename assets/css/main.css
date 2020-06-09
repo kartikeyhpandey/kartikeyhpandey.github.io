@@ -2,6 +2,92 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 
+.nav .icon {
+    display: none;
+}
+.nav .icon:hover {
+    outline: 0px solid white;
+}
+
+
+@media screen and (max-width: 980px) {
+    .nav a {
+        display: none;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+.nav {
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+.nav ul {
+    display: inline;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: white;
+    height: auto;
+    text-decoration: none;
+    
+}
+
+.nav ul li {
+    display: inline-block;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.nav ul li a{
+   font-size: 1.1rem;
+}
+
+.nav ul li a:hover {
+    outline: 2px solid white;
+    outline-offset: 5px;
+}
+
+
+.nav ul li:hover ul {
+    display: block;
+}
+
+.nav ul li ul {
+    position: fixed;
+    width: max-content;
+    display: none;
+}
+
+.nav ul li ul li {
+    background: #000;
+    display: block;
+    height: auto;
+}
+
+.nav ul li ul li a {
+    display: block !important;
+    height: auto;
+    font-size: 1rem;
+}
+
+.nav ul li ul li:hover {
+    outline: 2px solid white;
+    
+}
+.nav ul li ul li a:hover {
+    outline: 0px solid white;
+}
+
+
+
 .btn {
     display: inline-block;
     padding: 13px 20px;
@@ -2450,6 +2536,7 @@ hr {
         background-color: #000;
     }
 }
+
 .box > :last-child,
 .box > :last-child > :last-child,
 .box > :last-child > :last-child > :last-child {

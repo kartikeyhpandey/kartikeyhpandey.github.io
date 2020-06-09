@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
+
+<head>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Elements</title>
     <meta charset="utf-8" />
@@ -14,7 +15,27 @@
     <!-- Header -->
     <header id="header" class="alt">
         <div class="logo"><a href="index.html"><img style="max-height:40px; vertical-align:middle" src="images/logo.png"> Kartikey Pandey</a></div>
-        <a href="#menu">Menu</a>
+        <div class="nav">
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='work-experience.html'>Work Experience</a></li>
+                <li><a href='leadership.html'>Leadership</a></li>
+                <li><a href='projects.html'>Projects</a></li>
+                <li class="w3-center"><a href='university-honors-program.html'>Honors Program <i class="fa fa-caret-down"></i></a>
+                    <ul class="w3-center">
+                        <li><a href='problem-pitch.html'>Problem Pitch</a></li>
+                        <li><a href='global-scholar.html'>Global Scholar</a></li>
+                    </ul>
+                </li>
+                <li><a href='year-in-review.html'>Year In Review <i class="fa fa-caret-down"></i></a>
+                    <ul class="w3-center">
+                        <li><a href='2018-19.html'>Freshmen Year</a></li>
+                        <li><a href='2019-20.html'>Sophomore Year</a></li>
+                    </ul>
+                </li>
+                <li><a href="#menu" class="icon"><i class="fa fa-bars"></i></a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- Nav -->
@@ -37,7 +58,7 @@
             <li><a href='projects.html'>Projects</a></li>
         </ul>
     </nav>
-   <section class="banner full">
+    <section class="banner full">
         <article>
             <img src="images/slide01.jpg" alt="" />
             <div class="inner">
@@ -497,4 +518,6 @@ print 'It took ' + i + ' iterations to sort the deck.';
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
-</body></html>
+</body>
+
+</html>
