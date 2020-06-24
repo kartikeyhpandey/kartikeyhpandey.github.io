@@ -68,7 +68,8 @@
 }
 
 .nav ul li ul li {
-    background: #000;
+    background: rgba(0,0,0,1);
+    width: 157px;
     display: block;
     height: auto;
 }
